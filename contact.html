@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" class="main-logo" alt="Website Logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" id="icon" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" id="icon" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+
+
+    <!-- Contact Us -->
+
+
+
+    <section class="contact-us">
+
+        <div class="row">
+            <div class="contact-col">
+                <div>
+
+                    <span>
+                        <h5>Phase 7 Terminal Hayatabad</h5>
+                        <p>Peshawar, Pakistan</p>
+                    </span>
+                </div>
+
+                <div>
+                    <span>
+                        <h5>091-8877544</h5>
+                        <p>Monday to Saturday, 8AM to 6PM</p>
+                    </span>
+                </div>
+
+                <div>
+                    <span>
+                        <h5>info@imscinces.edu.pk</h5>
+                        <p>Email your Query</p>
+                    </span>
+                </div>
+
+
+
+            </div>
+            <div class="contact-col">
+
+                <form action="index.html">
+                    <input type="text" placeholder="Enter your name">
+                    <input type="email" placeholder="Enter Email address">
+                    <input type="text" placeholder="Enter your subject">
+                    <textarea rows="8" placeholder="Message"></textarea>
+                    <button type="submit" class="hero-btn red-btn">Send Message</button>
+
+                </form>
+
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- --------------------------Footer---------------------------------- -->
+
+    <section class="footer">
+
+        <h4>About Us</h4>
+        <p>IMSciences Peshawar provides quality education, fostering innovation, leadership, and personal growth
+            <br>through research, modern facilities, and expert faculty. </p>
+        <div class="icons">
+            <i class="fa fa-brands fa-facebook"></i>
+            <i class="fa fa-brands fa-square-twitter"></i>
+            <i class="fa fa-brands fa-square-instagram"></i>
+            <i class="fa fa-brands fa-youtube"></i>
+        </div>
+        <p>Made With <i class="fa-regular fa-heart"></i> by Khalid Usman</p>
+    </section>
+
+
+
+
+
+
+
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>

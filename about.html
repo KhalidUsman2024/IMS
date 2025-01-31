@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" class="main-logo" alt="Website Logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" id="icon" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" id="icon" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+
+    <!-- --------------------------About Us Content----------------------------- -->
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>We Are Peshawar's Best University</h1>
+                <p> IMSciences Peshawar is one of the leading institutions in the region, offering world-class education
+                    across various disciplines including Business, IT, Social Sciences, and Management. With a focus on
+                    academic excellence, innovation, and research, the university provides a vibrant learning
+                    environment for students. Our faculty consists of highly qualified professors who are dedicated to
+                    fostering intellectual growth and practical skills. IMSciences offers state-of-the-art facilities,
+                    including modern classrooms, a well-stocked library, and advanced computer labs, ensuring that
+                    students have access to the best resources. We also emphasize personal development through
+                    extracurricular activities, leadership programs, and internships. Our students are equipped with the
+                    knowledge and skills necessary to excel in their careers. IMSciences is committed to shaping the
+                    future of Peshawar and beyond, making us the best choice for higher education.</p>
+                <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+            </div>
+            <div class="about-col">
+                <img src="images/about.jpg">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- --------------------------Footer---------------------------------- -->
+
+    <section class="footer">
+
+        <h4>About Us</h4>
+        <p>IMSciences Peshawar provides quality education, fostering innovation, leadership, and personal growth
+            <br>through research, modern facilities, and expert faculty.</p>
+        <div class="icons">
+            <i class="fa fa-brands fa-facebook"></i>
+            <i class="fa fa-brands fa-square-twitter"></i>
+            <i class="fa fa-brands fa-square-instagram"></i>
+            <i class="fa fa-brands fa-youtube"></i>
+        </div>
+        <p>Made With <i class="fa-regular fa-heart"></i> by Khalid Usman</p>
+    </section>
+
+
+
+
+
+
+
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
